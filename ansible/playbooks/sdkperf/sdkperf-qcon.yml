@@ -1,6 +1,6 @@
 ---
 - hosts: sdkperf_nodes
-  remote_user: ec2-user
+  remote_user: "{{remote_user}}"
 
   ##################################################
   # SDKPerf Config Section
@@ -19,6 +19,7 @@
 
   tasks:
     - name: Consume Test Queue 
-      shell: nohup ./sdkperf-c-x64/sdkperf_c -cip="{{ item }}":"{{ broker_port }}" -cu="{{ client_username }}"@"{{ broker_msg_vpn }}" -cp="{{ client_password }}" -cc="{{ client_connection_count }}" -sql="{{ msg_queue_prefix }}""{{groups['sdkperf_nodes'].index(inventory_hostname)}}" -stl="{{msg_queue_sub}}" </dev/null >nohup_qcon.out 2>&1 &
+      # shell: nohup ./sdkperf-c-x64/sdkperf_c -cip="{{ item }}":"{{ broker_port }}" -cu="{{ client_username }}"@"{{ broker_msg_vpn }}" -cp="{{ client_password }}" -cc="{{ client_connection_count }}" -sql="{{ msg_queue_prefix }}""{{groups['sdkperf_nodes'].index(inventory_hostname)}}" -stl="{{msg_queue_sub}}" </dev/null >nohup_qcon.out 2>&1 &
+      shell: nohup dotnet sdkperf-cs-x86_64/net6.0/sdkperf_cs.dll -cip="{{ item }}":"{{ broker_port }}" -cu="{{ client_username }}"@"{{ broker_msg_vpn }}" -cp="{{ client_password }}" -cc="{{ client_connection_count }}" -sql="{{ msg_queue_prefix }}""{{groups['sdkperf_nodes'].index(inventory_hostname)}}" -stl="{{msg_queue_sub}}" </dev/null >nohup_qcon.out 2>&1 &
       loop: "{{ broker_urls }}"
 

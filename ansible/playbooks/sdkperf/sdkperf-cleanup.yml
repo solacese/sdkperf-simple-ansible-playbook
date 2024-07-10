@@ -5,7 +5,8 @@
     - name: Delete SDKPerf Resources
       ansible.builtin.file:
       # Update Path according to sdkperf sdk
-        path: sdkperf-c-x64
+        # path: sdkperf-c-x64
+        path: sdkperf-cs-x86_64
         state: absent
     - name: Delete SDKPerf Publisher Results
       ansible.builtin.file:
@@ -13,5 +14,5 @@
         state: absent
     - name: Delete SDKPerf Subscriber Results
       ansible.builtin.file:
-        path: nohup_.out
+        path: nohup_qcon.out
         state: absent

@@ -1,0 +1,12 @@
+---
+# tasks file for sdkperf-cs-x86_64
+- name: Copy sdkperf to worker nodes
+  copy:
+    src: sdkperf-cs-x86_64
+    dest: .
+    owner: "{{ file_owner }}"
+    mode: "{{ file_mode }}"
+
+- name: Give sdkperf execute permissions
+  become: true
+  command: chmod -R +x sdkperf-cs-x86_64

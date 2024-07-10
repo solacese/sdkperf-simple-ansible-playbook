@@ -1,0 +1,656 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "sdkperf_cs/1.0.0": {
+        "dependencies": {
+          "OpenTelemetry": "1.4.0",
+          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.4.0",
+          "Solace.Messaging.Trace.Propagation": "1.0.0",
+          "SolaceSystems.Solclient.Messaging": "10.25.0",
+          "C5": "1.0.2.0",
+          "Plossum CommandLine": "0.3.0.14"
+        },
+        "runtime": {
+          "sdkperf_cs.dll": {}
+        }
+      },
+      "Google.Protobuf/3.19.4": {
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.19.4.0",
+            "fileVersion": "3.19.4.0"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.43.0": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Core.Api.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.43.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Client/2.43.0": {
+        "dependencies": {
+          "Grpc.Net.Common": "2.43.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.0"
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Client.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.43.0.0"
+          }
+        }
+      },
+      "Grpc.Net.Common/2.43.0": {
+        "dependencies": {
+          "Grpc.Core.Api": "2.43.0"
+        },
+        "runtime": {
+          "lib/net6.0/Grpc.Net.Common.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.43.0.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration/3.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/3.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/3.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/3.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/3.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "3.1.0",
+          "Microsoft.Extensions.DependencyInjection": "3.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Options": "3.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Configuration/3.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.1.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "3.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Configuration.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/3.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Primitives": "3.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/3.1.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Configuration.Binder": "3.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Options": "3.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.1.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56504"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.1": {},
+      "Microsoft.NETCore.Targets/1.1.3": {},
+      "OpenTelemetry/1.4.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Configuration": "3.1.0",
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.4.0"
+        },
+        "runtime": {
+          "lib/net6.0/OpenTelemetry.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.4.0.802"
+          }
+        }
+      },
+      "OpenTelemetry.Api/1.4.0": {
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenTelemetry.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.4.0.802"
+          }
+        }
+      },
+      "OpenTelemetry.Api.ProviderBuilderExtensions/1.4.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0",
+          "OpenTelemetry.Api": "1.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.4.0.802"
+          }
+        }
+      },
+      "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.4.0": {
+        "dependencies": {
+          "Google.Protobuf": "3.19.4",
+          "Grpc.Net.Client": "2.43.0",
+          "OpenTelemetry": "1.4.0"
+        },
+        "runtime": {
+          "lib/net6.0/OpenTelemetry.Exporter.OpenTelemetryProtocol.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.4.0.802"
+          }
+        }
+      },
+      "Serilog/2.12.0": {
+        "runtime": {
+          "lib/net6.0/Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.12.0.0"
+          }
+        }
+      },
+      "Serilog.Sinks.Console/4.1.0": {
+        "dependencies": {
+          "Serilog": "2.12.0"
+        },
+        "runtime": {
+          "lib/net5.0/Serilog.Sinks.Console.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
+        }
+      },
+      "Solace.Messaging.Trace.Propagation/1.0.0": {
+        "dependencies": {
+          "Serilog": "2.12.0",
+          "Serilog.Sinks.Console": "4.1.0",
+          "SolaceSystems.Solclient.Messaging": "10.25.0",
+          "System.Runtime": "4.3.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Solace.Messaging.Trace.Propagation.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SolaceSystems.Solclient.Messaging/10.25.0": {
+        "runtimeTargets": {
+          "runtimes/linux-arm64/lib/netstandard2.0/SolaceSystems.Solclient.Messaging.dll": {
+            "rid": "linux-arm64",
+            "assetType": "runtime",
+            "assemblyVersion": "10.25.0.0",
+            "fileVersion": "10.25.0.0"
+          },
+          "runtimes/linux-musl-x64/lib/netstandard2.0/SolaceSystems.Solclient.Messaging.dll": {
+            "rid": "linux-musl-x64",
+            "assetType": "runtime",
+            "assemblyVersion": "10.25.0.0",
+            "fileVersion": "10.25.0.0"
+          },
+          "runtimes/linux-x64/lib/netstandard2.0/SolaceSystems.Solclient.Messaging.dll": {
+            "rid": "linux-x64",
+            "assetType": "runtime",
+            "assemblyVersion": "10.25.0.0",
+            "fileVersion": "10.25.0.0"
+          },
+          "runtimes/linux-x86/lib/netstandard2.0/SolaceSystems.Solclient.Messaging.dll": {
+            "rid": "linux-x86",
+            "assetType": "runtime",
+            "assemblyVersion": "10.25.0.0",
+            "fileVersion": "10.25.0.0"
+          },
+          "runtimes/osx-arm64/lib/netstandard2.0/SolaceSystems.Solclient.Messaging.dll": {
+            "rid": "osx-arm64",
+            "assetType": "runtime",
+            "assemblyVersion": "10.25.0.0",
+            "fileVersion": "10.25.0.0"
+          },
+          "runtimes/osx-x64/lib/netstandard2.0/SolaceSystems.Solclient.Messaging.dll": {
+            "rid": "osx-x64",
+            "assetType": "runtime",
+            "assemblyVersion": "10.25.0.0",
+            "fileVersion": "10.25.0.0"
+          },
+          "runtimes/win-x64/lib/netstandard2.0/SolaceSystems.Solclient.Messaging.dll": {
+            "rid": "win-x64",
+            "assetType": "runtime",
+            "assemblyVersion": "10.25.0.0",
+            "fileVersion": "10.25.0.0"
+          },
+          "runtimes/win-x86/lib/netstandard2.0/SolaceSystems.Solclient.Messaging.dll": {
+            "rid": "win-x86",
+            "assetType": "runtime",
+            "assemblyVersion": "10.25.0.0",
+            "fileVersion": "10.25.0.0"
+          },
+          "runtimes/linux-arm64/native/libsolclient.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-x64/native/libsolclient.so": {
+            "rid": "linux-musl-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libsolclient.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x86/native/libsolclient.so": {
+            "rid": "linux-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-arm64/native/libcrypto.3.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-arm64/native/libsolclient.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-arm64/native/libssl.3.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libcrypto.3.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libsolclient.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libssl.3.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libcrypto-3.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "3.0.8.0"
+          },
+          "runtimes/win-x64/native/libsolclient.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "7.30.0.2"
+          },
+          "runtimes/win-x64/native/libssl-3.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "3.0.8.0"
+          },
+          "runtimes/win-x86/native/libcrypto-3.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "3.0.8.0"
+          },
+          "runtimes/win-x86/native/libsolclient.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "7.30.0.2"
+          },
+          "runtimes/win-x86/native/libssl-3.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "3.0.8.0"
+          }
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/7.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "System.Memory/4.5.3": {},
+      "System.Runtime/4.3.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.1",
+          "Microsoft.NETCore.Targets": "1.1.3"
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "C5/1.0.2.0": {
+        "runtime": {
+          "C5.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
+      "Plossum CommandLine/0.3.0.14": {
+        "runtime": {
+          "Plossum CommandLine.dll": {
+            "assemblyVersion": "0.3.0.14",
+            "fileVersion": "0.3.0.14"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "sdkperf_cs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Protobuf/3.19.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fd07/ykL4O4FhqrZIELm5lmiyOHfdPg9+o+hWr6tcfRdS7tHXnImg/2wtogLzlW2eEmr0J7j6ZrZvaWOLiJbxQ==",
+      "path": "google.protobuf/3.19.4",
+      "hashPath": "google.protobuf.3.19.4.nupkg.sha512"
+    },
+    "Grpc.Core.Api/2.43.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mikPMVE2I1AaNde1JQvR3ud8HsUmpeA4blqTt4SfCnDSNVN1GCd2UUEZsiID4MRPUzXwflMYl7/HhFytb6d+Ww==",
+      "path": "grpc.core.api/2.43.0",
+      "hashPath": "grpc.core.api.2.43.0.nupkg.sha512"
+    },
+    "Grpc.Net.Client/2.43.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZhkxEOT3YPsJufsSYwIixwnPyZbjy3xOZgO61J2ZwEby3StwBDFQ5eHoxSjNVSpOP+ax8WMbgbmZfzjO+hBW8A==",
+      "path": "grpc.net.client/2.43.0",
+      "hashPath": "grpc.net.client.2.43.0.nupkg.sha512"
+    },
+    "Grpc.Net.Common/2.43.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kt0Hb1N1tlb5UdN17bTHEPNbKP3LUHEZQSKD47etAVI5KLDtmVGO4YsUGM/krrNMwHRjhUCy0EhUU8uVMc3upA==",
+      "path": "grpc.net.common/2.43.0",
+      "hashPath": "grpc.net.common.2.43.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Lu41BWNmwhKr6LgyQvcYBOge0pPvmiaK8R5UHXX4//wBhonJyWcT2OK1mqYfEM5G7pTf31fPrpIHOT6sN7EGOA==",
+      "path": "microsoft.extensions.configuration/3.1.0",
+      "hashPath": "microsoft.extensions.configuration.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ESz6bVoDQX7sgWdKHF6G9Pq672T8k+19AFb/txDXwdz7MoqaNQj2/in3agm/3qae9V+WvQZH86LLTNVo0it8vQ==",
+      "path": "microsoft.extensions.configuration.abstractions/3.1.0",
+      "hashPath": "microsoft.extensions.configuration.abstractions.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Binder/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o9eELDBfNkR7sUtYysFZ1Q7BQ1mYt27DMkups/3vu7xgPyOpMD+iAfrBZFzUXT2iw0fmFb8s1gfNBZS+IgjKdQ==",
+      "path": "microsoft.extensions.configuration.binder/3.1.0",
+      "hashPath": "microsoft.extensions.configuration.binder.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KVkv3aF2MQpmGFRh4xRx2CNbc2sjDFk+lH4ySrjWSOS+XoY1Xc+sJphw3N0iYOpoeCCq8976ceVYDH8sdx2qIQ==",
+      "path": "microsoft.extensions.dependencyinjection/3.1.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-44rDtOf1JXXAFpNT2EXMExaDm/4OJ2RXOL9i9lE4bK427nzC7Exphv+beB6IgluyE2GIoo8zezTStMXI7MQ8WA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.0",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P+8sKQ8L4ooL79sxxqwFPxGGC3aBrUDLB/dZqhs4J0XjTyrkeeyJQ4D4nzJB6OnAhy78HIIgQ/RbD6upOXLynw==",
+      "path": "microsoft.extensions.logging/3.1.0",
+      "hashPath": "microsoft.extensions.logging.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jjo4YXRx6MIpv6DiRxJjSpl+sPP0+5VW0clMEdLyIAz44PPwrDTFrd5PZckIxIXl1kKZ2KK6IL2nkt0+ug2MQg==",
+      "path": "microsoft.extensions.logging.abstractions/3.1.0",
+      "hashPath": "microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Configuration/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yW3nIoNM3T5iZg8bRViiCN4+vIU/02l+mlWSvKqWnr0Fd5Uk1zKdT9jBWKEcJhRIWKVWWSpFWXnM5yWoIAy1Eg==",
+      "path": "microsoft.extensions.logging.configuration/3.1.0",
+      "hashPath": "microsoft.extensions.logging.configuration.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9b6JHY7TAXrSfZ6EEGf+j8XnqKIiMPErfmaNXhJYSCb+BUW2H4RtzkNJvwLJzwgzqBP0wtTjyA6Uw4BPPdmkMw==",
+      "path": "microsoft.extensions.options/3.1.0",
+      "hashPath": "microsoft.extensions.options.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tx6gMKE3rDspA1YZT8SlQJmyt1BaBSl6mNjB3g0ZO6m3NnoavCifXkGeBuDk9Ae4XjW8C+dty52p+0u38jPRIQ==",
+      "path": "microsoft.extensions.options.configurationextensions/3.1.0",
+      "hashPath": "microsoft.extensions.options.configurationextensions.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LEKAnX7lhUhSoIc2XraCTK3M4IU/LdVUzCe464Sa4+7F4ZJuXHHRzZli2mDbiT4xzAZhgqXbvfnb5+CNDcQFfg==",
+      "path": "microsoft.extensions.primitives/3.1.0",
+      "hashPath": "microsoft.extensions.primitives.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TMBuzAHpTenGbGgk0SMTwyEkyijY/Eae4ZGsFNYJvAr/LDn1ku3Etp3FPxChmDp5HHF3kzJuoaa08N0xjqAJfQ==",
+      "path": "microsoft.netcore.platforms/1.1.1",
+      "hashPath": "microsoft.netcore.platforms.1.1.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3Wrmi0kJDzClwAC+iBdUBpEKmEle8FQNsCs77fkiOIw/9oYA07bL1EZNX0kQ2OMN3xpwvl0vAtOCYY3ndDNlhQ==",
+      "path": "microsoft.netcore.targets/1.1.3",
+      "hashPath": "microsoft.netcore.targets.1.1.3.nupkg.sha512"
+    },
+    "OpenTelemetry/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0yHQEYVyYcxxD3H+Zec/e2iw1XU6ksXPKIqUGyqm9jt5ZTkC2OEVAjaqx1Wcr3kua+YEXgebkAbcIiHuK7oUDw==",
+      "path": "opentelemetry/1.4.0",
+      "hashPath": "opentelemetry.1.4.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Api/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-754QKfiEZ3TNR3lOWS+u15qJYOVMWXhuUy8zjCXtgbaJihCFga3Wm3UZ9ggC5CJiUEjyeR6vw66NBZUxMOPTNQ==",
+      "path": "opentelemetry.api/1.4.0",
+      "hashPath": "opentelemetry.api.1.4.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Api.ProviderBuilderExtensions/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W0Vp2PutW0yJbjRQMTcKhtDlp20kXZqvswQ0EteSoJ4kI3J2Tod5m5RG+3JblAZU3kIwSCzQnhtHT8I4LOvm0g==",
+      "path": "opentelemetry.api.providerbuilderextensions/1.4.0",
+      "hashPath": "opentelemetry.api.providerbuilderextensions.1.4.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Exporter.OpenTelemetryProtocol/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LdKLPpeVE6JPWKxiuUkQg7x8FkF5qJMjvwDefEaD2TDblMvLwqJErjJ5WVLb9H8A0pC+V1Yko9lUIOlqSMnZoQ==",
+      "path": "opentelemetry.exporter.opentelemetryprotocol/1.4.0",
+      "hashPath": "opentelemetry.exporter.opentelemetryprotocol.1.4.0.nupkg.sha512"
+    },
+    "Serilog/2.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xaiJLIdu6rYMKfQMYUZgTy8YK7SMZjB4Yk50C/u//Z4OsvxkUfSPJy4nknfvwAC34yr13q7kcyh4grbwhSxyZg==",
+      "path": "serilog/2.12.0",
+      "hashPath": "serilog.2.12.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.Console/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K6N5q+5fetjnJPvCmkWOpJ/V8IEIoMIB1s86OzBrbxwTyHxdx3pmz4H+8+O/Dc/ftUX12DM1aynx/dDowkwzqg==",
+      "path": "serilog.sinks.console/4.1.0",
+      "hashPath": "serilog.sinks.console.4.1.0.nupkg.sha512"
+    },
+    "Solace.Messaging.Trace.Propagation/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8POXLmFV7crya+ttaKFsadjE9Jf3C47P/KLf+iJqwOHPIpdNGX7mlDtZ2BB1iYK4MC/K7rxnrbnDaY3dRStyYQ==",
+      "path": "solace.messaging.trace.propagation/1.0.0",
+      "hashPath": "solace.messaging.trace.propagation.1.0.0.nupkg.sha512"
+    },
+    "SolaceSystems.Solclient.Messaging/10.25.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XZ2SugBLXpDn1yhFLq8k5ENYcqtgeKmsdpGFPAsJ7wu+fQeEsOFRf7KT2IAE8kmOgti6kLv+eKO5gTMCSa57eg==",
+      "path": "solacesystems.solclient.messaging/10.25.0",
+      "hashPath": "solacesystems.solclient.messaging.10.25.0.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9W0ewWDuAyDqS2PigdTxk6jDKonfgscY/hP8hm7VpxYhNHZHKvZTdRckberlFk3VnCmr3xBUyMBut12Q+T2aOw==",
+      "path": "system.diagnostics.diagnosticsource/7.0.0",
+      "hashPath": "system.diagnostics.diagnosticsource.7.0.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Runtime/4.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-abhfv1dTK6NXOmu4bgHIONxHyEqFjW8HwXPmpY9gmll+ix9UNo4XDcmzJn6oLooftxNssVHdJC1pGT9jkSynQg==",
+      "path": "system.runtime/4.3.1",
+      "hashPath": "system.runtime.4.3.1.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "C5/1.0.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Plossum CommandLine/0.3.0.14": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -4,4 +4,4 @@
   tasks:
     - name: SIGINT every PID in sight
       become: true
-      shell: /bin/kill -SIGINT $(pgrep sdkperf)
+      shell: /bin/kill $(pgrep -f sdkperf)

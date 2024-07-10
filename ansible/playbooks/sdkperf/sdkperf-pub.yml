@@ -25,11 +25,13 @@
 
   tasks:
     - name: run QoS0 test
-      shell: nohup ./sdkperf-c-x64/sdkperf_c -cip="{{ item }}":"{{ broker_port }}" -cu="{{ client_username }}"@"{{ broker_msg_vpn }}" -cp="{{ client_password }}" -cc="{{ client_connection_count }}" -ptl="{{publisher_topic_list}}" -mn="{{ msg_number }}" -msa="{{ msg_payload_size_bytes }}" -mr="{{ msg_rate_per_second }}" -mt=direct </dev/null >nohup_pub.out 2>&1 &
+      # shell: nohup ./sdkperf-c-x64/sdkperf_c -cip="{{ item }}":"{{ broker_port }}" -cu="{{ client_username }}"@"{{ broker_msg_vpn }}" -cp="{{ client_password }}" -cc="{{ client_connection_count }}" -ptl="{{publisher_topic_list}}" -mn="{{ msg_number }}" -msa="{{ msg_payload_size_bytes }}" -mr="{{ msg_rate_per_second }}" -mt=direct </dev/null >nohup_pub.out 2>&1 &
+      shell: nohup dotnet sdkperf-cs-x86_64/net6.0/sdkperf_cs.dll -cip="{{ item }}":"{{ broker_port }}" -cu="{{ client_username }}"@"{{ broker_msg_vpn }}" -cp="{{ client_password }}" -cc="{{ client_connection_count }}" -ptl="{{publisher_topic_list}}" -mn="{{ msg_number }}" -msa="{{ msg_payload_size_bytes }}" -mr="{{ msg_rate_per_second }}" -mt=direct </dev/null >nohup_pub.out 2>&1 &
       loop: "{{ broker_urls }}"
       when: persistent == false
 
     - name: run QoS1 test
-      shell: nohup ./sdkperf-c-x64/sdkperf_c -cip="{{ item }}":"{{ broker_port }}" -cu="{{ client_username }}"@"{{ broker_msg_vpn }}" -cp="{{ client_password }}" -cc="{{ client_connection_count }}" -ptl={{publisher_topic_list}} -mn="{{ msg_number }}" -msa="{{ msg_payload_size_bytes }}" -mr="{{ msg_rate_per_second }}" -mt=persistent </dev/null >nohup_pub.out 2>&1 &
+      # shell: nohup ./sdkperf-c-x64/sdkperf_c -cip="{{ item }}":"{{ broker_port }}" -cu="{{ client_username }}"@"{{ broker_msg_vpn }}" -cp="{{ client_password }}" -cc="{{ client_connection_count }}" -ptl={{publisher_topic_list}} -mn="{{ msg_number }}" -msa="{{ msg_payload_size_bytes }}" -mr="{{ msg_rate_per_second }}" -mt=persistent </dev/null >nohup_pub.out 2>&1 &
+      shell: nohup dotnet sdkperf-cs-x86_64/net6.0/sdkperf_cs.dll -cip="{{ item }}":"{{ broker_port }}" -cu="{{ client_username }}"@"{{ broker_msg_vpn }}" -cp="{{ client_password }}" -cc="{{ client_connection_count }}" -ptl={{publisher_topic_list}} -mn="{{ msg_number }}" -msa="{{ msg_payload_size_bytes }}" -mr="{{ msg_rate_per_second }}" -mt=persistent </dev/null >nohup_pub.out 2>&1 &
       loop: "{{ broker_urls}}"
       when: persistent == true
