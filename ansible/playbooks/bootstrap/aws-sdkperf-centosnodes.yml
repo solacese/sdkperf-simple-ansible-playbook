@@ -1,0 +1,10 @@
+---
+- hosts: sdkperf_nodes
+  remote_user: "{{remote_user}}"
+  become: true
+  tasks:
+    - include_role: 
+        name: sdkperf/sdkperf-c-x64
+      vars:        
+        file_owner: "{{remote_user}}"
+        file_mode: "0666"

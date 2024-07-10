@@ -1,0 +1,17 @@
+---
+- hosts: sdkperf_nodes
+  remote_user: "{{remote_user}}"
+  tasks:
+    - name: Delete SDKPerf Resources
+      ansible.builtin.file:
+      # Update Path according to sdkperf sdk
+        path: sdkperf-c-x64
+        state: absent
+    - name: Delete SDKPerf Publisher Results
+      ansible.builtin.file:
+        path: nohup_pub.out
+        state: absent
+    - name: Delete SDKPerf Subscriber Results
+      ansible.builtin.file:
+        path: nohup_.out
+        state: absent

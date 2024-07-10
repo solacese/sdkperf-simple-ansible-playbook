@@ -1,0 +1,7 @@
+---
+- hosts: sdkperf_nodes
+  remote_user: "{{remote_user}}"
+  tasks:
+    - name: SIGINT every PID in sight
+      become: true
+      shell: /bin/kill -SIGINT $(pgrep sdkperf)
