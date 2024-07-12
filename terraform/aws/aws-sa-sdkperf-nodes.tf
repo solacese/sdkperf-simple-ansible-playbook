@@ -56,9 +56,9 @@ resource "local_file" "sdkperf_inv_file" {
 }
 
 # Trigger Ansible Tasks for the SDKPerf Nodes - Only after all the VM resources and Ansible Inventories & Playbooks have been created
-# resource "null_resource" "trigger_sdkperf_ansible" {
-#   provisioner "local-exec" {
-#     command = "ansible-playbook -i ../../ansible/inventory/sdkperf-general.yaml -i ${local_file.sdkperf_inv_file.filename} --private-key ${var.private_key_path} ../../ansible/playbooks/bootstrap/aws-sdkperf-centosnodes.yml"
-#   }
-#   depends_on = [local_file.sdkperf_inv_file]
-# }
+resource "null_resource" "trigger_sdkperf_ansible" {
+  provisioner "local-exec" {
+    command = "ansible-playbook -i ../../ansible/inventory/sdkperf-general.yaml -i ${local_file.sdkperf_inv_file.filename} --private-key ${var.private_key_path} ../../ansible/playbooks/bootstrap/aws-sdkperf-centosnodes.yml"
+  }
+  depends_on = [local_file.sdkperf_inv_file]
+}

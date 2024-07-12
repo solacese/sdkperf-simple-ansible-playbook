@@ -9,8 +9,7 @@ Once terraform has rendered the template file, it will create a version on the A
 
 If you want to modify any of the values of the SDKPerf ansibile playbook sample files, you can either modify or create copies of the files:
 
-- start-sdkperf-c-pub.tpl 
-- start-sdkperf-c-qcons.tpl
+- start-sdkperf-cs-qcons.tpl
 
 Inside the /terraform/templates/playbooks/ folder
 
