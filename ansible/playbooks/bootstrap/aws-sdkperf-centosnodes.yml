@@ -1,5 +1,5 @@
 ---
-- hosts: sdkperf_nodes
+- hosts: all
   remote_user: "{{remote_user}}"
   become: true
   tasks:

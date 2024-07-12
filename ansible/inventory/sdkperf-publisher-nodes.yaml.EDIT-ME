@@ -1,0 +1,6 @@
+sdkperf_publisher_nodes:
+    # IP of managed nodes
+    # X.XX.XX.XXX
+  vars:
+    remote_user: root # replace with configured user 
+   
